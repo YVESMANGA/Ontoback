@@ -5,8 +5,7 @@ import numpy as np
 from fastapi import HTTPException
 from sentence_transformers import SentenceTransformer
 from rdflib import URIRef, Namespace, Graph, RDF, XSD, Literal, OWL, RDFS
-import math
-from sklearn.metrics.pairwise import cosine_similarity
+
 from pydantic import BaseModel
 from onto_module.mistral import *
 
