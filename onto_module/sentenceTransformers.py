@@ -7,7 +7,9 @@ from sentence_transformers import SentenceTransformer
 from rdflib import URIRef, Namespace, Graph, RDF, XSD, Literal, OWL, RDFS
 
 from pydantic import BaseModel
-from onto_module.mistral import *
+from sklearn.metrics.pairwise import cosine_similarity
+
+from onto_module.groq import *
 
 model = SentenceTransformer('all-MiniLM-L12-v2')   # all-mpnet-base-v2
 
